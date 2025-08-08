@@ -5,7 +5,6 @@ public:
         int curr=0;
         int n=gas.size();
         int startIdx=0;
-        
         for(int i=0;i<n;i++){
             total_gas+=gas[i]-cost[i];
             curr+=gas[i]-cost[i];
