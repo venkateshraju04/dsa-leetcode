@@ -35,13 +35,11 @@ public:
             }
         }
         int count=0;
-        int ones=0;
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
-                if(grid[i][j]==1)ones++;
-                if(visited[i][j]==1)count++;
+                if( grid[i][j]==1 && !visited[i][j])count++;
             }
         }
-        return ones-count;
+        return count;
     }
 };
